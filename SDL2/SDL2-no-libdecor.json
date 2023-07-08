@@ -1,8 +1,10 @@
 {
-  "name": "SDL2",
-  "buildsystem": "autotools",
-  "config-opts": ["--disable-static"],
-  "sources": [
+    "name": "SDL2",
+    "buildsystem": "autotools",
+    "config-opts": [
+        "--disable-static"
+    ],
+    "sources": [
         {
             "type": "archive",
       	    "url": "https://github.com/libsdl-org/SDL/releases/download/release-2.26.4/SDL2-2.26.4.tar.gz",
@@ -16,15 +18,17 @@
                 "url-template": "https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL2-$version.tar.gz"
             }
         }
-  ],
-  "cleanup": [ "/bin/sdl2-config", 
-               "/include", 
-               "/lib/libSDL2.la", 
-               "/lib/libSDL2main.a", 
-               "/lib/libSDL2main.la", 
-               "/lib/libSDL2_test.a", 
-               "/lib/libSDL2_test.la", 
-               "/lib/cmake", 
-               "/share/aclocal",
-               "/lib/pkgconfig"]
+    ],
+    "cleanup": [
+        "/bin/sdl2-config",
+        "/include",
+        "/lib/libSDL2.la",
+        "/lib/libSDL2main.a",
+        "/lib/libSDL2main.la",
+        "/lib/libSDL2_test.a",
+        "/lib/libSDL2_test.la",
+        "/lib/cmake",
+        "/share/aclocal",
+        "/lib/pkgconfig"
+    ]
 }
