@@ -30,7 +30,7 @@ for path in "${file_paths[@]}"; do
   if [[ ! -f /run/.containerenv && ! -f /.dockerenv ]]; then
    flatpak run --filesystem="$(pwd)" org.flathub.flatpak-external-data-checker ${args[@]} $path
   else
-   /app/flatpak-external-data-checker ${args[@]} $path
+   /app/flatpak-external-data-checker "${args[@]}" "$path"
   fi
 done
 
