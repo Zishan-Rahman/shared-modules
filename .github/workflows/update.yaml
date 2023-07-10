@@ -27,6 +27,5 @@ jobs:
           EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # We don't want the default entrypoint, we want our own script :p
+          # We don't want the default entrypoint, we want our own script
           entrypoint: update-checker.sh
-          args: update-checker.txt
