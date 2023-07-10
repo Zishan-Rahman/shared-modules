@@ -44,10 +44,9 @@ rm .gitmodules
 
 We provide an automatic updating mechanism for submodules located here. In order to utilize it:
 
-1. Set up x-checker-data for your sources: https://github.com/flathub/flatpak-external-data-checker#url-checker
-2. Add the path to your sources to `update-checker.txt`
+- Set up x-checker-data for your sources: https://github.com/flathub/flatpak-external-data-checker#url-checker
 
-And it will update automatically.
+And it will check for an update every hour.
 
 
 [See the description in the Flathub wiki](https://github.com/flathub/flathub/wiki/App-Requirements#shared-modules) for more information.
