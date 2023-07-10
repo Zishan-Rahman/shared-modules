@@ -23,7 +23,7 @@ done
 
 # Print the file paths in the array
 for path in "${file_paths[@]}"; do
-  echo "Running data checker on: $line"
+  echo "Running data checker on: $path"
 
  # If we're not running in a container, use the Flatpak. Else, assume we're
  # running in a container and call the data checker directly.
